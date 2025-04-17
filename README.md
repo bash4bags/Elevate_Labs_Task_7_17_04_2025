@@ -4,11 +4,11 @@
 2. Check if Docker running 
 > docker ps
 3. Run netdata
-> docker run -d --name=netdata -p 19999:19999 netdata/netdata
-    - -d: Runs the container in detached mode.
-    - --name=netdata: Names the container.
-    - -p 19999:19999: Maps local port 19999 to the container’s port 19999.
-    - netdata/netdata: Specifies the image to use.
+> docker run -d --name=netdata -p 19999:19999 netdata/netdata <br>
+    - -d: Runs the container in detached mode.<br>
+    - --name=netdata: Names the container.<br>
+    - -p 19999:19999: Maps local port 19999 to the container’s port 19999.<br>
+    - netdata/netdata: Specifies the image to use.<br>
 4. Open browser to see the dashboard > http://localhost:19999/
 5. Check error.log
 > docker exec netdata cat /var/log/netdata/error.log
